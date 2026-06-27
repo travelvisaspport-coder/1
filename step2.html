@@ -3,26 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>اختيار الدولة</title>
+<title>اختيار الطلب</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="header">✈ طلب التأشيرة</div>
-
 <div class="container">
 
-<div class="stepbar">
-  <div class="active">1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
-</div>
-
 <div class="card">
-
-<h2>🌍 معلومات السفر</h2>
+<h2>🌍 اختيار الدولة ونوع السفر</h2>
 
 <select id="country">
 <option value="">اختر الدولة</option>
@@ -35,21 +25,19 @@
 <option value="">نوع السفر</option>
 <option>سياحة</option>
 <option>عمل</option>
+<option>إقامة</option>
 </select>
 
 <button onclick="next()">التالي</button>
-
 </div>
 
 </div>
 
 <script>
 function next(){
-  let c=document.getElementById("country").value;
-  let t=document.getElementById("type").value;
-
-  if(c=="" || t==""){
-    alert("يرجى ملء جميع البيانات");
+  if(document.getElementById("country").value=="" ||
+     document.getElementById("type").value==""){
+    alert("يرجى ملء جميع الحقول");
     return;
   }
   location.href="step3.html";
