@@ -3,32 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>البيانات</title>
+<title>المعلومات الشخصية</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="header">✈ البيانات الشخصية</div>
+<div class="header">👤 بيانات الطلب</div>
 
 <div class="container">
 
-<div class="stepbar">
-  <div>1</div>
-  <div class="active">2</div>
-  <div>3</div>
-  <div>4</div>
-</div>
-
 <div class="card">
 
-<h2>👤 المعلومات</h2>
+<h2>📄 معلومات شخصية</h2>
 
 <input id="name" placeholder="الاسم الكامل">
-<input id="passport" placeholder="رقم الجواز">
-<input id="phone" placeholder="رقم الهاتف">
+<input id="lastname" placeholder="اللقب">
+<input id="birth" type="date" placeholder="تاريخ الميلاد">
 
-<button onclick="next()">التالي</button>
+<h3>🛂 معلومات الجواز</h3>
+
+<input id="passport" placeholder="رقم جواز السفر">
+<input id="expiry" type="date" placeholder="تاريخ الانتهاء">
+
+<h3>📞 معلومات التواصل</h3>
+
+<input id="phone" placeholder="رقم الهاتف">
+<input id="email" placeholder="البريد الإلكتروني">
+
+<h3>🌍 سبب السفر</h3>
+
+<select id="reason">
+<option value="">اختر السبب</option>
+<option>سياحة</option>
+<option>عمل</option>
+<option>إقامة</option>
+</select>
+
+<button onclick="next()">التالي إلى الدفع</button>
 
 </div>
 
@@ -36,15 +48,21 @@
 
 <script>
 function next(){
-  let n=document.getElementById("name").value;
-  let p=document.getElementById("passport").value;
-  let ph=document.getElementById("phone").value;
 
-  if(n=="" || p=="" || ph==""){
-    alert("يرجى ملء جميع البيانات");
-    return;
-  }
-  location.href="step4.html";
+let fields = [
+"name","lastname","birth",
+"passport","expiry",
+"phone","email","reason"
+];
+
+for(let f of fields){
+if(document.getElementById(f).value==""){
+alert("يرجى ملء جميع الحقول");
+return;
+}
+}
+
+location.href="step4.html";
 }
 </script>
 
