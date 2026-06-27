@@ -3,29 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>البيانات</title>
+<title>اختيار الدولة</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<div class="header">✈ طلب التأشيرة</div>
+
 <div class="container">
+
+<div class="stepbar">
+  <div class="active">1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+</div>
 
 <div class="card">
 
-<h2>🌍 اختيار الدولة</h2>
+<h2>🌍 معلومات السفر</h2>
 
 <select id="country">
-  <option value="">اختر الدولة</option>
-  <option>فرنسا</option>
-  <option>إسبانيا</option>
-  <option>إيطاليا</option>
+<option value="">اختر الدولة</option>
+<option>فرنسا</option>
+<option>إسبانيا</option>
+<option>إيطاليا</option>
 </select>
 
 <select id="type">
-  <option value="">نوع السفر</option>
-  <option>سياحة</option>
-  <option>عمل</option>
+<option value="">نوع السفر</option>
+<option>سياحة</option>
+<option>عمل</option>
 </select>
 
 <button onclick="next()">التالي</button>
@@ -43,7 +52,6 @@ function next(){
     alert("يرجى ملء جميع البيانات");
     return;
   }
-
   location.href="step3.html";
 }
 </script>
