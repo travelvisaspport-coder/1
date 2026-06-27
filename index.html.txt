@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Visa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header">
+<h1>✈ Travel Visa Support</h1>
+<p>طلب التأشيرة بسهولة</p>
+</div>
+
+<div class="container">
+
+<div class="card">
+<h2>مرحبًا بك</h2>
+<p>ابدأ طلب التأشيرة الآن</p>
+
+<a href="step2.html">
+<button>ابدأ الطلب</button>
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

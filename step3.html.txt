@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>البيانات الشخصية</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h2>👤 البيانات الشخصية</h2>
+
+<input id="name" placeholder="الاسم الكامل">
+<input id="passport" placeholder="رقم الجواز">
+<input id="phone" placeholder="رقم الهاتف">
+
+<button onclick="next()">التالي</button>
+
+</div>
+
+</div>
+
+<script>
+function next(){
+  let n=document.getElementById("name").value;
+  let p=document.getElementById("passport").value;
+  let ph=document.getElementById("phone").value;
+
+  if(n=="" || p=="" || ph==""){
+    alert("يرجى ملء جميع البيانات");
+    return;
+  }
+
+  location.href="step4.html";
+}
+</script>
+
+</body>
+</html>

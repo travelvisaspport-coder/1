@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الدفع</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h2>💳 الدفع</h2>
+
+<p>المبلغ: 90€</p>
+
+<a href="success.html">
+<button>تأكيد الدفع</button>
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

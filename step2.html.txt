@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>البيانات</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🌍 اختيار الدولة</h2>
+
+<select id="country">
+  <option value="">اختر الدولة</option>
+  <option>فرنسا</option>
+  <option>إسبانيا</option>
+  <option>إيطاليا</option>
+</select>
+
+<select id="type">
+  <option value="">نوع السفر</option>
+  <option>سياحة</option>
+  <option>عمل</option>
+</select>
+
+<button onclick="next()">التالي</button>
+
+</div>
+
+</div>
+
+<script>
+function next(){
+  let c=document.getElementById("country").value;
+  let t=document.getElementById("type").value;
+
+  if(c=="" || t==""){
+    alert("يرجى ملء جميع البيانات");
+    return;
+  }
+
+  location.href="step3.html";
+}
+</script>
+
+</body>
+</html>
