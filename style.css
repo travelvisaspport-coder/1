@@ -2,79 +2,13 @@ body{
   margin:0;
   font-family:Arial;
   direction:rtl;
-  background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+  background:#f3f6fb;
 }
 
-/* Header جميل */
-.header{
-  background: linear-gradient(90deg, #1e3a8a, #2563eb);
-  color:white;
-  padding:30px;
-  text-align:center;
-}
-
-/* الحاوية */
-.container{
-  max-width:900px;
-  margin:auto;
-  padding:20px;
-}
-
-/* الكرت */
-.card{
-  background:white;
-  padding:25px;
-  border-radius:16px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.1);
-  margin-top:20px;
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-3px);
-}
-
-/* الحقول */
-input, select{
-  width:100%;
-  padding:12px;
-  margin:10px 0;
-  border-radius:10px;
-  border:1px solid #ddd;
-  outline:none;
-}
-
-/* الأزرار */
-button{
-  width:100%;
-  padding:14px;
-  background: linear-gradient(90deg,#2563eb,#1e40af);
-  color:white;
-  border:none;
-  border-radius:10px;
-  cursor:pointer;
-  font-size:16px;
-  transition:0.3s;
-}
-
-button:hover{
-  transform:scale(1.03);
-}
-
-/* زر رجوع */
-.back{
-  background:#6b7280;
-}
-
-/* صورة في الصفحة الأولى */
-.hero{
-  width:100%;
-  border-radius:15px;
-  margin-top:15px;
-}
+/* HERO */
 .hero{
   height:100vh;
-  background-image:url("https://images.unsplash.com/photo-1526772662000-3f88f10405ff");
+  background-image:url("https://images.unsplash.com/photo-1502920514313-52581002a659");
   background-size:cover;
   background-position:center;
   position:relative;
@@ -84,31 +18,49 @@ button:hover{
   text-align:center;
 }
 
-/* طبقة غامقة فوق الصورة */
 .overlay{
   position:absolute;
-  top:0;
-  left:0;
   width:100%;
   height:100%;
   background:rgba(0,0,0,0.5);
 }
 
-/* الصندوق الذي يحتوي النص */
 .hero-content{
   position:relative;
   background:rgba(255,255,255,0.15);
-  padding:30px;
+  padding:25px;
   border-radius:15px;
   backdrop-filter:blur(10px);
   color:white;
   max-width:500px;
 }
 
-/* الزر */
-.hero-content button{
-  margin-top:15px;
-  padding:12px 20px;
+/* CARD */
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:20px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  margin-top:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+input, select{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  border-radius:10px;
+  border:1px solid #ddd;
+}
+
+button{
+  width:100%;
+  padding:12px;
   border:none;
   border-radius:10px;
   background:#2563eb;
@@ -116,6 +68,6 @@ button:hover{
   cursor:pointer;
 }
 
-.hero-content button:hover{
+button:hover{
   background:#1e40af;
 }
