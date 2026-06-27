@@ -1,24 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بيانات الطلب</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
 <form action="https://formsubmit.co/travelvisa.spport@gmail.com" method="POST">
 
-  <div class="card">
+<div class="card">
 
-    <h2>👤 بيانات الطلب</h2>
+<h2>👤 البيانات الشخصية</h2>
 
-    <input name="name" placeholder="الاسم الكامل" required>
-    <input name="lastname" placeholder="اللقب" required>
-    <input name="passport" placeholder="رقم جواز السفر" required>
-    <input name="phone" placeholder="رقم الهاتف" required>
-    <input name="email" placeholder="البريد الإلكتروني" required>
+<input name="name" placeholder="الاسم الكامل" required>
+<input name="lastname" placeholder="اللقب" required>
+<input name="birth" type="date" required>
 
-    <select name="reason" required>
-      <option value="">سبب السفر</option>
-      <option>سياحة</option>
-      <option>عمل</option>
-      <option>إقامة</option>
-    </select>
+<h3>🛂 بيانات الجواز</h3>
 
-    <button type="submit">إرسال الطلب</button>
+<input name="passport" placeholder="رقم جواز السفر" required>
+<input name="expiry" type="date" required>
 
-  </div>
+<h3>📞 التواصل</h3>
+
+<input name="phone" placeholder="رقم الهاتف" required>
+<input name="email" placeholder="البريد الإلكتروني" required>
+
+<h3>🌍 سبب السفر</h3>
+
+<select name="reason" required>
+<option value="">اختر</option>
+<option>سياحة</option>
+<option>عمل</option>
+<option>إقامة</option>
+</select>
+
+<button type="submit">إرسال الطلب</button>
+
+</div>
 
 </form>
+
+</div>
+
+</body>
+</html>
